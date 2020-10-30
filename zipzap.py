@@ -8,5 +8,18 @@
 Тебе может понадобиться цикл for и ветвления
 """
 
+
+def zipzap_counter():
+    for digit in range(1, 101):
+        if digit % 3 == 0 and digit % 5 == 0:
+            print('zip-zap')
+        elif digit % 3 == 0:
+            print('zip')
+        elif digit % 5 == 0:
+            print('zap')        
+        else:
+            print(digit)
+
+
 if __name__ == '__main__':
-    pass
+    zipzap_counter()
