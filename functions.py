@@ -6,9 +6,9 @@ import keyword
 # количество чисел и сообщает, есть ли среди них чётное
 def even_checker(*digits):
     for digit in digits:
-      if digit % 2 == 0: 
-        print('Среди введенных чисел есть четное.')
-        break
+        if digit % 2 == 0:        
+            return True 
+    return False
 
 # используй тернарный оператор, чтобы вызвать функцию
 # если возраст больше 21 года, в противном случае верни
